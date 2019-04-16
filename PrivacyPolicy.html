@@ -154,11 +154,14 @@
 
 </div>
 
-<script>
-document.write('navigator.language:'+navigator.language);
-document.write('<br>navigator.userLanguage:'+navigator.userLanguage);
-document.write('<br>navigator.browserLanguage:'+navigator.browserLanguage);
-document.write('<br>navigator.systemLanguage:'+navigator.systemLanguage);
+<script type="text/javascript">
+	if(navigator.language == "zh-CN"){
+		setTimeout('Redirect()',0);
+		function Redirect()
+		{
+		    window.location.assign("https://tw.yahoo.com");
+		}
+	}
 </script>
 	
 </body>
